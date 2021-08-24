@@ -2,8 +2,385 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Michroma', sans-serif;
+}
+
+
+
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
 }
 
 html {
     overflow-x: hidden;
+}
+
+header {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    /* gap: 10px; */
+    background-color: black;
+}
+
+header img {
+    display: block;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+
+
+header nav ul {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav ul li {
+    position: relative;
+    width: 100%;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    background-color: black;
+    text-align: center;
+}
+
+header nav ul li:hover {
+
+    background-color: #cb0e2a;
+
+}
+
+
+header nav ul li {
+    border-bottom: 1px solid #fff;
+
+}
+
+header nav ul li a {
+    color: white;
+
+}
+
+header section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+header section h1 {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+header section img {
+    display: block;
+    width: 100%;
+    padding: 0px;
+}
+
+header section button {
+    width: 60%;
+    height: 55px;
+    background-color: #cb0e2a;
+    border: none;
+    color: white;
+}
+
+header section button a {
+
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .grouped-section {
+    height: 1000px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.grouped-section .top {
+    flex: 2;
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.grouped-section .top .first {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("/public/assets/material\ cut.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.grouped-section .top .second {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("/public/assets/neo\ cut\ bravo.png");
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+
+.grouped-section .bottom {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("/public/assets/Neocut\ bravo\ details.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.grouped-section .top .first h2,
+.grouped-section .top .first p,
+.grouped-section .top .second h2,
+.grouped-section .top .second p,
+.grouped-section .bottom h2,
+.grouped-section .bottom p {
+    color: #fff;
+}
+
+.grouped-section .top .first p,
+.grouped-section .top .second p,
+.grouped-section .bottom p {
+    margin-top: 20px;
+    width: 80%;
+    text-align: center;
+}
+
+main .applications {
+    display: flex;
+    flex-direction: column;
+}
+
+main .applications img {
+    width: 100%;
+}
+
+main .applications section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .applications section h2 {
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.application-list {
+    width: 50%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.application-list li {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+    padding: 10px 20px;
+    background-color: #cb0e2a;
+    color: white;
+    text-align: center;
+
+}
+
+main .tech-spec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .tech-spec img {
+    width: 100%;
+}
+
+main .tech-spec section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tech-spec section h2 {
+    margin: 20px 0px;
+    text-align: center;
+}
+
+.specs {
+    width: 80%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    list-style-type: circle;
+}
+
+.tech-spec section h4 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.sizes {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style-type: circle;
+}
+
+#contact {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#success-message {
+    position: relative;
+    width: 80%;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 1.3rem;
+    text-align: center;
+    color: #fff;
+    border-radius: 20px;
+    background-color: green;
+}
+
+#contact-us {
+    width: 100%;
+    margin: 20px 0px;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#contact-us form {
+    width: 100%;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+input,
+label,
+textarea {
+    margin: 0px 20px;
+    font-size: 1.2rem;
+
+
+}
+
+#contact-us label {
+    color: white;
+    font-size: 1.2rem;
+}
+
+input {
+    height: 55px;
+    padding: 10px;
+
+}
+
+textarea {
+    padding: 10px;
+
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-weight: lighter;
+}
+
+button {
+    width: 50%;
+    height: 55px;
+    margin: 20px 0px;
+    align-self: center;
+    background-color: #cb0e2a;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 9px #999;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3553db
+}
+
+button:active {
+    background-color: #3553db;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
 }

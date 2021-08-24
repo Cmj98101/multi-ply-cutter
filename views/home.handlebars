@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Roboto&display=swap" rel="stylesheet">
+    <title>Velocity | Multi-Ply Cutter</title>
+</head>
+
+<body>
+    <header>
+        <img src="/public/assets/VELOCITY LOGO WITH TEXT - WHITE TRANSPARENT (1).png" alt="">
+        <nav>
+            <ul>
+                <li><a href="#applications">Applications</a></li>
+                <li><a href="#productivity">Increase Production</a></li>
+                <li><a href="#saftey">Saftey Features</a></li>
+                <li><a href="#cutting-head">Cutting Head</a></li>
+                <li><a href="#tech-spec">Technical Specifications</a></li>
+                <li><a href="#contact">Need More Info?</a></li>
+
+            </ul>
+        </nav>
+        <section>
+            <h1>Production Raised to a Higher Expectation.</h1>
+            <img src="/public/assets/neo-cut-with-material cut.png" alt="">
+            <button><a href="#contact">Get More Info Now</a></button>
+        </section>
+
+    </header>
+    <main>
+        <section class="applications">
+            <img src="/public/assets/Audaces cutter .jpg" alt="">
+            <section>
+                <h2 id="applications">Applications</h2>
+                <ul class="application-list">
+                    <li>Apparel</li>
+                    <li>Aviation</li>
+                    <li>Automotive</li>
+                    <li>Marine</li>
+                    <li>Sewn</li>
+                    <li>Upholstrey</li>
+                    <li>Furniture</li>
+                    <li>Composite</li>
+                </ul>
+            </section>
+        </section>
+        <section class="grouped-section">
+            <section class="top">
+                <section id="productivity" class="first">
+                    <h2>Productivity</h2>
+                    <p>With all these sensors, the productivity and excellent execution of the projects are assured,
+                        without losses, and an excellent finish.</p>
+                </section>
+                <section id="saftey" class="second">
+                    <h2>Saftey</h2>
+                    <p>The safest cutting machine in the world due to its security laser barrier that interrupts its
+                        operation as soon as the machine’s work area is invaded, avoiding any accident.</p>
+                </section>
+            </section>
+            <section id="cutting-head" class="bottom">
+                <h2>The Cutting Head</h2>
+                <p>The deflection of the cutting blade is monitored continuously to ensure the perfect cut, regardless
+                    of the complexity of the patterns or the characteristics of the fabric. Contours, markings and
+                    notches are made with precision.</p>
+            </section>
+        </section>
+
+        <section id="tech-spec" class="tech-spec">
+            <img src="/public/assets/Neocut bravo details no cover.jpg" alt="">
+            <section>
+                <h2>Technical Specifications</h2>
+                <ul class="specs">
+                    <li>Cutting height from 2 inches to 3 inches of compressed layers</li>
+                    <li>Cutting window 180cm x 175cm</li>
+                    <li>Automatic vacuum controller</li>
+                    <li>Electrical Specification: 3-phase 380 v 50/60 Hz</li>
+                    <li>Communication: Ethernet / Wireless</li>
+                    <li>Maximum cutting speed: 100 m / min</li>
+                    <li>Noise: less than 75 dB</li>
+                    <li>Average power consumption: 9 kW</li>
+                </ul>
+                <h4>​Available Cutting Window Sizes:</h4>
+                <ul class="sizes">
+                    <li>5.90 FT X 5.74 FT</li>
+                    <li>5.90 FT X 6.88 FT</li>
+                    <li>6.88 FT X 6.88 FT</li>
+                    <li>7.21 FT X 5.74 FT</li>
+                    <li>7.21 FT X 6.88 FT</li>
+                </ul>
+            </section>
+        </section>
+
+        <h2 id="contact">Contact Us</h2>
+        <section id="contact-us">
+            <p id="success-message" style="display: none;">Email has been sent!</p>
+            <form action="send" method="POST">
+                <label for="name">Name*:</label> <input type="text" name="name" id="name" placeholder="John Doe"
+                    required>
+                <br>
+                <label for="email">Email:</label> <input type="email" name="email" id="email"
+                    placeholder="email@email.com" required><br>
+                <label for="contact-number">Contact Number:</label> <input type="tel" name="contactNumber"
+                    id="contact-number" placeholder="(111) 123-4567"> <br>
+                <label for="questions">Questions</label><textarea name="questions" id="questions" cols="30" rows="5"
+                    placeholder="Any Questions feel free to let us Know!" required></textarea>
+                <button type="submit" id="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../public/js/form.js"></script>
+</body>
+
+</html>
