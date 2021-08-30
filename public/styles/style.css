@@ -34,20 +34,23 @@ header {
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     /* gap: 10px; */
     background-color: black;
 }
 
 header img {
+    width: 100%;
     display: block;
     margin-bottom: 20px;
     padding: 20px;
 }
 
-
+header nav {
+    width: 100%;
+}
 
 header nav ul {
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -84,6 +87,7 @@ header nav ul li a {
 }
 
 header section {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -274,9 +278,13 @@ main .tech-spec section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     gap: 20px;
     list-style-type: circle;
+}
+
+.specs li {
+    text-align: center
 }
 
 .tech-spec section h4 {
@@ -292,6 +300,10 @@ main .tech-spec section {
     align-items: center;
     gap: 20px;
     list-style-type: circle;
+}
+
+.seperate-sizes-section {
+    display: none;
 }
 
 #contact {
@@ -383,4 +395,93 @@ button:active {
     background-color: #3553db;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
+}
+
+@media screen and (min-width: 768px) {
+
+    header img {
+        width: 50%;
+
+    }
+
+
+
+    .grouped-section .top {
+        flex-direction: row;
+    }
+
+    .grouped-section .top .first {
+        flex: 1;
+    }
+
+
+
+    .grouped-section .top .second {
+        flex: 1;
+
+    }
+
+    .grouped-section .bottom {
+        flex: 3;
+
+    }
+
+    main .tech-spec {
+        align-items: center;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    main .tech-spec img {
+        flex: 1;
+        width: 50%;
+        min-width: 320px;
+
+    }
+
+    .sizes,
+    .tech-spec section h4 {
+        display: none;
+    }
+
+    .tech-spec section {
+        flex: 1;
+        justify-content: flex-start
+    }
+
+
+
+    .seperate-sizes-section {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .seperate-sizes-section .seperate-title {
+        display: flex;
+    }
+
+    .seperate-sizes-section .sizes {
+        display: flex;
+    }
+
+
+}
+
+
+@media screen and (min-width: 1024px) {
+    header nav {
+        width: 70%;
+    }
+
+    header nav ul {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    header nav ul li {
+
+        border: none;
+    }
 }
